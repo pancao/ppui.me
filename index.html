@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Design matters.">
+<meta name="keywords" content="ppui ppx">
+<meta name="theme-color" content="#EC6947">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PPUI, Design matters.</title>
+<!-- Set render engine for 360 browser -->
+<meta name="renderer" content="webkit">
+<!-- No Baidu Siteapp-->
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<link rel="icon" type="image/png" href="favicon.png">
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="app-icon72x72@2x.png">
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<meta name="apple-mobile-web-app-title" content="Panro"/>
+<link rel="apple-touch-icon-precomposed" href="app-icon72x72@2x.png">
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+<meta name="msapplication-TileColor" content="#F3EDDF">
+<link rel="stylesheet" href="assets/css/main.css">
+<script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script src="assets/js/parallax.js"></script>
+
+</head>
+<body>
+    <div id="body">
+
+
+
+    <div id = "main">
+        <div id = "header">
+                <div id = "menu">
+                    <ul>
+                        <li>HOME</li>
+                        <li>PORTFOLIO</li>
+                        <li>RESUME</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </div>
+        </div>
+
+        <div id = "bg">
+            <div class = "bgcircle layer" id="bg1" data-depth="0.20"></div>
+            <div class = "bgcircle layer" id="bg2" data-depth="0.24"></div>
+            <div class = "bgcircle layer" id="bg3" data-depth="0.26"></div>
+        </div>
+
+        <div id = "middle">
+            <div id = "title">PORTFOLIO</div>
+            <div id = "subtitle">PPUI by Pengyu.Pan</div>
+        </div>
+
+        <div id = "top">
+            <div class = "layer" id = "circle1" data-depth="0.40"></div>
+            <div class = "layer" id = "circle2" data-depth="0.60"></div>
+            <div class = "layer" id = "circle3" data-depth="0.80"></div>
+            <div class = "layer" id = "circle4" data-depth="1.00"></div>
+        </div>
+
+        <div id = "footer">
+            <p>Copyright © PPUI 2017, All rights reserved.</p>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+    var scene = document.getElementById('main');
+    var parallax = new Parallax(scene, {
+            calibrateX: true,
+            calibrateY: true,
+            scalarX: 5,
+            scalarY: 6,
+            frictionX: 0.1,
+            frictionY: 0.05,
+            });   
+    </script>
+    
+</body>
+</html>
